@@ -1,0 +1,23 @@
+{
+  "slug": "noether",
+  "name": "NOETHER",
+  "description": "Smart contract architecture and development patterns. The forge that shapes Metal (金).",
+  "version": "0.1.0",
+  "author": "0xHoneyJar",
+  "icon": "⚒️",
+  "tier": "free",
+  "skills": [
+    "forge",
+    "audit-contract",
+    "ceremony",
+    "excavate",
+    "evolve"
+  ],
+  "commands": [
+    "forge",
+    "ceremony"
+  ],
+  "compose_with": ["protocol"],
+  "element": "Metal (金)",
+  "persona": "NOETHER"
+}
