@@ -1,0 +1,14 @@
+slug: excavate
+name: excavate
+description: Study contract codebases and extract patterns into the canon
+capabilities:
+  model_tier: opus
+  danger_level: safe
+  effort_hint: large
+  downgrade_allowed: true
+  execution_hint: sequential
+  requires:
+    native_runtime: false
+    tool_calling: true
+    thinking_traces: false
+    vision: false

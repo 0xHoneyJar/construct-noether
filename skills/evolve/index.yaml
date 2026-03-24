@@ -1,0 +1,14 @@
+slug: evolve
+name: evolve
+description: Plan contract upgrades — what's conserved, what changes, what breaks
+capabilities:
+  model_tier: opus
+  danger_level: high
+  effort_hint: large
+  downgrade_allowed: false
+  execution_hint: sequential
+  requires:
+    native_runtime: false
+    tool_calling: true
+    thinking_traces: false
+    vision: false

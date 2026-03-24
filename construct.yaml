@@ -1,0 +1,74 @@
+schema_version: 3
+name: NOETHER
+slug: noether
+version: 0.1.0
+description: "Smart contract architecture and development patterns. The forge that shapes Metal (金)."
+short_description: "Contract engineering — patterns, audits, deploy ceremonies"
+domain:
+  - smart-contracts
+  - solidity
+  - evm
+  - architecture
+author: 0xHoneyJar
+license: proprietary
+visibility: public
+
+repository:
+  url: https://github.com/0xHoneyJar/construct-noether.git
+
+identity:
+  persona: NOETHER
+  expertise: knowledge/
+
+skills:
+  - slug: forge
+    path: skills/forge
+    description: "Write contracts from canonical patterns — registry, roles, launch lifecycle, bitmap tracking"
+  - slug: audit-contract
+    path: skills/audit-contract
+    description: "Review contracts against spec — find violations, security concerns, pattern drift"
+  - slug: ceremony
+    path: skills/ceremony
+    description: "Validate deploy sequences — hub before spokes, roles before activation"
+  - slug: excavate
+    path: skills/excavate
+    description: "Study existing contract codebases and extract patterns into the canon"
+  - slug: evolve
+    path: skills/evolve
+    description: "Plan contract upgrades — what's conserved, what changes, what breaks"
+
+commands:
+  - slug: forge
+    path: commands/forge.md
+    description: "Write or evolve contracts using canonical patterns"
+  - slug: ceremony
+    path: commands/ceremony.md
+    description: "Validate or generate deploy scripts"
+
+capabilities:
+  model_tier: opus
+  danger_level: high
+  effort_hint: large
+  downgrade_allowed: false
+  execution_hint: sequential
+  requires:
+    native_runtime: false
+    tool_calling: true
+    thinking_traces: true
+    vision: false
+
+compose_with:
+  - protocol
+
+events:
+  emits:
+    - noether.contract_forged
+    - noether.audit_complete
+    - noether.ceremony_validated
+  consumes:
+    - protocol.verification_complete
+
+quick_start:
+  command: "/forge"
+  description: "Write a contract using canonical patterns"
+  follow_up: "/ceremony to validate the deploy sequence"
